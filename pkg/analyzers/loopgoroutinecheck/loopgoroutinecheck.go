@@ -12,7 +12,7 @@ const name = "loopgoroutinecheck"
 
 var Analyzer = &analysis.Analyzer{
 	Name:     name,
-	Doc:      "check the variable of the goroutine anonymous function",
+	Doc:      "the loop variable captured by func literal in go statement might have unexpected values",
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
 }
